@@ -1,12 +1,12 @@
 require "sinatra"
 get "/" do
   if  params == {}
-      @name= "desconocido"
+      @nombre= "desconocido"
   elsif params == {"name"=>""}  
-      @name="desconocido"
+      @nombre="desconocido"
 
   else 
-       @name=params["name"]  
+       @nombre=params["name"]  
     
   end
   erb:index
